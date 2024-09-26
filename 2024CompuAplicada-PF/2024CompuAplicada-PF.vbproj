@@ -72,6 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CIUDADANOSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +84,25 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mdiAdministrador.Designer.vb">
+      <DependentUpon>mdiAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiEncargado.Designer.vb">
+      <DependentUpon>mdiEncargado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiEncargado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiOperador.Designer.vb">
+      <DependentUpon>mdiOperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiOperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modConexion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,6 +120,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="mdiAdministrador.resx">
+      <DependentUpon>mdiAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiEncargado.resx">
+      <DependentUpon>mdiEncargado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiOperador.resx">
+      <DependentUpon>mdiOperador.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -104,6 +137,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CIUDADANOSDataSet.xsc">
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CIUDADANOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CIUDADANOSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CIUDADANOSDataSet.xss">
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -114,6 +158,11 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CIUDADANOS.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
