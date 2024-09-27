@@ -1,1 +1,10 @@
 c:\users\5to compu\documents\visual studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe.config
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe.config
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.pdb
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.xml
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.Resources.resources
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.vbproj.GenerateResource.Cache
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.exe
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.xml
+C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.pdb
