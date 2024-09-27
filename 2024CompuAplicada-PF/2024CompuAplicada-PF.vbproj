@@ -136,6 +136,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+=======
     <EmbeddedResource Include="frmDEmpleados.resx">
       <DependentUpon>frmDEmpleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +148,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+>>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
     </EmbeddedResource>
     <EmbeddedResource Include="mdiAdministrador.resx">
       <DependentUpon>mdiAdministrador.vb</DependentUpon>
@@ -162,6 +167,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <None Include="ClassDiagram1.cd" />
+=======
     <None Include="CIUDADANOSDataSet.xsc">
       <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
     </None>
@@ -173,6 +181,7 @@
     <None Include="CIUDADANOSDataSet.xss">
       <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
     </None>
+>>>>>>> d84db4b074260e052f9db93980e3d6f819383ca8
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
