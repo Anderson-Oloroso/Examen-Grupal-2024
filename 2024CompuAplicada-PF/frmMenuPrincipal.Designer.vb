@@ -1,5 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<<<<<<< HEAD:2024CompuAplicada-PF/Form1.Designer.vb
 Partial Class frmmenuprincipal
+=======
+Partial Class frmMenuPrincipal
+>>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6:2024CompuAplicada-PF/frmMenuPrincipal.Designer.vb
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,6 +26,7 @@ Partial Class frmmenuprincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+<<<<<<< HEAD:2024CompuAplicada-PF/Form1.Designer.vb
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.msusuarios = New System.Windows.Forms.ToolStripMenuItem()
@@ -130,6 +135,18 @@ Partial Class frmmenuprincipal
         Me.msusuario.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
+=======
+        Me.SuspendLayout()
+        '
+        'frmMenuPrincipal
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Name = "frmMenuPrincipal"
+        Me.Text = "Menú"
+        Me.ResumeLayout(False)
+>>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6:2024CompuAplicada-PF/frmMenuPrincipal.Designer.vb
 
     End Sub
 
