@@ -56,7 +56,6 @@ C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\20
 C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmMenuPrincipal.resources
 C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmDEmpleados.resources
 C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmDTCuenta.resources
-<<<<<<< HEAD
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe.config
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.exe
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.xml
@@ -76,7 +75,6 @@ C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.Resources.resources
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.vbproj.GenerateResource.Cache
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmCiudadanos.resources
-=======
 >>>>>>> 74e54f6564996bf7b2b29aaa38b264aade64f462
 >>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
 >>>>>>> d84db4b074260e052f9db93980e3d6f819383ca8
