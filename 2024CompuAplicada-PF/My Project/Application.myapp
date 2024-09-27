@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MyApplicationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MySubMain>true</MySubMain>
+<<<<<<< HEAD
   <MainForm>mdiOperador</MainForm>
+=======
+<<<<<<< HEAD
+  <MainForm>frmmenuprincipal</MainForm>
+=======
+  <MainForm>mdiAdministrador</MainForm>
+>>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
+>>>>>>> 7ac0872d42d1709f57157b12b28e4c8e3ba3243d
   <SingleInstance>false</SingleInstance>
-  <ShutdownMode>0</ShutdownMode>
+  <ShutdownMode>1</ShutdownMode>
   <EnableVisualStyles>true</EnableVisualStyles>
   <AuthenticationMode>0</AuthenticationMode>
   <SaveMySettingsOnExit>true</SaveMySettingsOnExit>
