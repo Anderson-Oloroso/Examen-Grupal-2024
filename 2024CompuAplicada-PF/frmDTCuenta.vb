@@ -62,6 +62,21 @@ Public Class frmDTCuenta
 
         desconect()
     End Sub
+    Private Sub eliminar()
+        sql = "DELETE* FROM TIPOCUENTA WHERE cod_tipocuenta= "
+        conect()
+        ejecutar.CommandType = CommandType.Text
+        ejecutar.Connection = conexion
+        ejecutar.CommandText = sql
+
+        Try
+            
+        Catch ex As Exception
+            MsgBox("Error en la eliminación: " & ex.Message, vbCritical + vbOKOnly, "Eliminar")
+        End Try
+
+        desconect()
+    End Sub
 
     Private Sub frmTipoCuenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BusCuentas()
@@ -81,5 +96,11 @@ Public Class frmDTCuenta
         Catch ex As Exception
             MsgBox("Error al crear el archivo: " & ex.Message, vbOKOnly + vbCritical, "Error al exportar a PDF")
         End Try
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        Dim r As Integer
+        r = InputBox("Ingrese el Codigo del tipo de cuenta que desea eliminar","Tipo de cuenta")
+
     End Sub
 End Class

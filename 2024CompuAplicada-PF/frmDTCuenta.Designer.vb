@@ -36,6 +36,7 @@ Partial Class frmDTCuenta
         '
         'dgvCuentas
         '
+        Me.dgvCuentas.AllowUserToOrderColumns = True
         Me.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCuentas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvcCTCuenta, Me.dgvcNombre, Me.dgvcDescrip})
         Me.dgvCuentas.Location = New System.Drawing.Point(12, 25)
@@ -47,21 +48,18 @@ Partial Class frmDTCuenta
         '
         Me.dgvcCTCuenta.HeaderText = "Cod. Tipo Cuenta"
         Me.dgvcCTCuenta.Name = "dgvcCTCuenta"
-        Me.dgvcCTCuenta.ReadOnly = True
         Me.dgvcCTCuenta.Width = 90
         '
         'dgvcNombre
         '
         Me.dgvcNombre.HeaderText = "Nombre"
         Me.dgvcNombre.Name = "dgvcNombre"
-        Me.dgvcNombre.ReadOnly = True
         Me.dgvcNombre.Width = 200
         '
         'dgvcDescrip
         '
         Me.dgvcDescrip.HeaderText = "Descripción"
         Me.dgvcDescrip.Name = "dgvcDescrip"
-        Me.dgvcDescrip.ReadOnly = True
         Me.dgvcDescrip.Width = 250
         '
         'btnActualizar
