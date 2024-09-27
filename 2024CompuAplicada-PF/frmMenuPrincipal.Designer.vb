@@ -264,3 +264,8 @@ Partial Class frmMenuPrincipal
     Friend WithEvents AdministradorToolStripMenuItem1 As ToolStripMenuItem
 >>>>>>> 49f8d7f1557077b19bbb7bc8954c41ac268b2028
 End Class
+
+    Friend Shared Sub Show()
+        Throw New NotImplementedException()
+    End Sub
+End Class

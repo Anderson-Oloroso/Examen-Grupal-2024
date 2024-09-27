@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{28301E95-63FA-4C7C-B7FA-AD5B93247ECA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_2024CompuAplicada_PF.mdiOperador</StartupObject>
+    <StartupObject>_2024CompuAplicada_PF.mdiEncargado</StartupObject>
     <RootNamespace>_2024CompuAplicada_PF</RootNamespace>
     <AssemblyName>2024CompuAplicada-PF</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -93,6 +93,12 @@
     <Compile Include="frmDTCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmencar.Designer.vb">
+      <DependentUpon>frmencar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmencar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMenuPrincipal.vb" />
     <Compile Include="frmMenuPrincipal.Designer.vb">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDTCuenta.resx">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmencar.resx">
+      <DependentUpon>frmencar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
