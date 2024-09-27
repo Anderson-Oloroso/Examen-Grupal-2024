@@ -2,12 +2,12 @@
 <<<<<<< HEAD:2024CompuAplicada-PF/Form1.Designer.vb
 Partial Class frmmenuprincipal
 =======
-Partial Class frmMenuPrincipal
+Partial Sub frmMenuPrincipal()
 >>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6:2024CompuAplicada-PF/frmMenuPrincipal.Designer.vb
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -24,7 +24,7 @@ Partial Class frmMenuPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
 <<<<<<< HEAD
         Me.txtnombre = New System.Windows.Forms.TextBox()
@@ -263,4 +263,5 @@ Partial Class frmMenuPrincipal
     Friend WithEvents OperadorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministradorToolStripMenuItem1 As ToolStripMenuItem
 >>>>>>> 49f8d7f1557077b19bbb7bc8954c41ac268b2028
+
 End Class

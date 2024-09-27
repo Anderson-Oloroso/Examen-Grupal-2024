@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{28301E95-63FA-4C7C-B7FA-AD5B93247ECA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_2024CompuAplicada_PF.mdiOperador</StartupObject>
+    <StartupObject>_2024CompuAplicada_PF.mdiOperadorrrr</StartupObject>
     <RootNamespace>_2024CompuAplicada_PF</RootNamespace>
     <AssemblyName>2024CompuAplicada-PF</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -116,10 +116,10 @@
     <Compile Include="mdiEncargado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mdiOperador.Designer.vb">
-      <DependentUpon>mdiOperador.vb</DependentUpon>
+    <Compile Include="mdiOperadorrrr.Designer.vb">
+      <DependentUpon>mdiOperadorrrr.vb</DependentUpon>
     </Compile>
-    <Compile Include="mdiOperador.vb">
+    <Compile Include="mdiOperadorrrr.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modConexion.vb" />
@@ -158,8 +158,8 @@
     <EmbeddedResource Include="mdiEncargado.resx">
       <DependentUpon>mdiEncargado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mdiOperador.resx">
-      <DependentUpon>mdiOperador.vb</DependentUpon>
+    <EmbeddedResource Include="mdiOperadorrrr.resx">
+      <DependentUpon>mdiOperadorrrr.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

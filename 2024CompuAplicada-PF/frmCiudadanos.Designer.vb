@@ -22,7 +22,7 @@ Partial Class frmCiudadanos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvTotal = New System.Windows.Forms.DataGridView()
         Me.dgvNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvApellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvRegion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -39,17 +39,18 @@ Partial Class frmCiudadanos
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnMostrar = New System.Windows.Forms.Button()
         Me.btnImprimir = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        CType(Me.dgvTotal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'dgvTotal
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvNombre, Me.dgvApellido, Me.dgvRegion, Me.dgvDepto, Me.dgvMunicipio})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 210)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1145, 261)
-        Me.DataGridView1.TabIndex = 0
+        Me.dgvTotal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTotal.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvNombre, Me.dgvApellido, Me.dgvRegion, Me.dgvDepto, Me.dgvMunicipio})
+        Me.dgvTotal.Location = New System.Drawing.Point(12, 210)
+        Me.dgvTotal.Name = "dgvTotal"
+        Me.dgvTotal.Size = New System.Drawing.Size(1145, 261)
+        Me.dgvTotal.TabIndex = 0
         '
         'dgvNombre
         '
@@ -131,7 +132,7 @@ Partial Class frmCiudadanos
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(68, 155)
+        Me.btnAgregar.Location = New System.Drawing.Point(12, 155)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(196, 23)
         Me.btnAgregar.TabIndex = 7
@@ -140,7 +141,7 @@ Partial Class frmCiudadanos
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(311, 155)
+        Me.btnEliminar.Location = New System.Drawing.Point(227, 155)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(176, 23)
         Me.btnEliminar.TabIndex = 8
@@ -149,7 +150,7 @@ Partial Class frmCiudadanos
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(528, 155)
+        Me.btnModificar.Location = New System.Drawing.Point(428, 155)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(176, 23)
         Me.btnModificar.TabIndex = 9
@@ -158,7 +159,7 @@ Partial Class frmCiudadanos
         '
         'btnMostrar
         '
-        Me.btnMostrar.Location = New System.Drawing.Point(746, 155)
+        Me.btnMostrar.Location = New System.Drawing.Point(634, 155)
         Me.btnMostrar.Name = "btnMostrar"
         Me.btnMostrar.Size = New System.Drawing.Size(176, 23)
         Me.btnMostrar.TabIndex = 10
@@ -167,18 +168,28 @@ Partial Class frmCiudadanos
         '
         'btnImprimir
         '
-        Me.btnImprimir.Location = New System.Drawing.Point(939, 155)
+        Me.btnImprimir.Location = New System.Drawing.Point(816, 155)
         Me.btnImprimir.Name = "btnImprimir"
         Me.btnImprimir.Size = New System.Drawing.Size(176, 23)
         Me.btnImprimir.TabIndex = 11
         Me.btnImprimir.Text = "IMPRIMIR"
         Me.btnImprimir.UseVisualStyleBackColor = True
         '
+        'btnCerrar
+        '
+        Me.btnCerrar.Location = New System.Drawing.Point(1027, 155)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(130, 23)
+        Me.btnCerrar.TabIndex = 12
+        Me.btnCerrar.Text = "Cerrar"
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
         'frmCiudadanos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1169, 512)
+        Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnImprimir)
         Me.Controls.Add(Me.btnMostrar)
         Me.Controls.Add(Me.btnModificar)
@@ -190,16 +201,16 @@ Partial Class frmCiudadanos
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvTotal)
         Me.Name = "frmCiudadanos"
-        Me.Text = "frmCiudadanos"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "FORMULARIO DE LOS CIUDADANOS"
+        CType(Me.dgvTotal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvTotal As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents txtId As TextBox
     Friend WithEvents txtNombre As TextBox
@@ -216,4 +227,5 @@ Partial Class frmCiudadanos
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnMostrar As Button
     Friend WithEvents btnImprimir As Button
+    Friend WithEvents btnCerrar As Button
 End Class
