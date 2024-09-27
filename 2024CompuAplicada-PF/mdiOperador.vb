@@ -61,8 +61,11 @@ Public Class mdiOperador
     End Sub
 
     Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CascadeToolStripMenuItem.Click
+        frmCiudadanos.MdiParent = Me
+        frmCiudadanos.Show()
 
     End Sub
+
 
     Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.TileVertical)

@@ -81,15 +81,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmCiudadanos.Designer.vb">
+      <DependentUpon>frmCiudadanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCiudadanos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDTCuenta.Designer.vb">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
     </Compile>
     <Compile Include="frmDTCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmMenuPrincipal.vb" />
     <Compile Include="frmMenuPrincipal.Designer.vb">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
@@ -136,6 +140,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCiudadanos.resx">
+      <DependentUpon>frmCiudadanos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDEmpleados.resx">
       <DependentUpon>frmDEmpleados.vb</DependentUpon>
     </EmbeddedResource>
