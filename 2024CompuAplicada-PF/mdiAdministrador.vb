@@ -2,7 +2,7 @@
 
 Public Class mdiAdministrador
 
-    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripMenuItem.Click, NewToolStripButton.Click, NewWindowToolStripMenuItem.Click
+    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripMenuItem.Click, NewToolStripButton.Click
         ' Cree una nueva instancia del formulario secundario.
         Dim ChildForm As New System.Windows.Forms.Form
         ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
@@ -60,23 +60,25 @@ Public Class mdiAdministrador
         Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
     End Sub
 
-    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CascadeToolStripMenuItem.Click
-        Me.LayoutMdi(MdiLayout.Cascade)
+    Private Sub EmpleadosToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
+        frmDEmpleados.MdiParent = Me
+        frmDEmpleados.Show()
+        frmDTCuenta.Close()
     End Sub
 
-    Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles TileVerticalToolStripMenuItem.Click
+    Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.TileVertical)
     End Sub
 
-    Private Sub TileHorizontalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles TileHorizontalToolStripMenuItem.Click
+    Private Sub TileHorizontalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.TileHorizontal)
     End Sub
 
-    Private Sub ArrangeIconsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ArrangeIconsToolStripMenuItem.Click
+    Private Sub ArrangeIconsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.ArrangeIcons)
     End Sub
 
-    Private Sub CloseAllToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CloseAllToolStripMenuItem.Click
+    Private Sub CloseAllToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         ' Cierre todos los formularios secundarios del principal.
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
@@ -85,4 +87,30 @@ Public Class mdiAdministrador
 
     Private m_ChildFormNumber As Integer
 
+    Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+        Dim bot As Integer
+        bot = MsgBox("¿Estás seguro que quieres cerrar sesión?", vbYesNo + vbQuestion, "Cerrar sesión")
+        If bot = 6 Then
+            Me.Close()
+            frmMenuPrincipal.Show()
+        End If
+    End Sub
+
+    Private Sub SalirToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem1.Click
+        Dim bot As Integer
+        bot = MsgBox("¿Estás seguro que quieres salir definitivamente?", vbYesNo + vbQuestion, "Salir")
+        If bot = 6 Then
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub TipoCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoCuentaToolStripMenuItem.Click
+        frmDTCuenta.MdiParent = Me
+        frmDTCuenta.Show()
+        frmDEmpleados.Close()
+    End Sub
+
+    Private Sub mdiAdministrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
