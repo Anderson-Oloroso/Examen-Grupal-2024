@@ -2,6 +2,9 @@
 <MyApplicationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MySubMain>true</MySubMain>
 <<<<<<< HEAD
+  <MainForm>frmMenuPrincipal</MainForm>
+=======
+<<<<<<< HEAD
   <MainForm>mdiOperador</MainForm>
 =======
 <<<<<<< HEAD
@@ -10,6 +13,7 @@
   <MainForm>mdiAdministrador</MainForm>
 >>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
 >>>>>>> 7ac0872d42d1709f57157b12b28e4c8e3ba3243d
+>>>>>>> 49f8d7f1557077b19bbb7bc8954c41ac268b2028
   <SingleInstance>false</SingleInstance>
   <ShutdownMode>1</ShutdownMode>
   <EnableVisualStyles>true</EnableVisualStyles>

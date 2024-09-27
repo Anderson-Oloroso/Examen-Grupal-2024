@@ -33,6 +33,9 @@ Namespace My
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
 <<<<<<< HEAD
+            Me.MainForm = Global._2024CompuAplicada_PF.frmMenuPrincipal
+=======
+<<<<<<< HEAD
             Me.MainForm = Global._2024CompuAplicada_PF.mdiOperador
 =======
 <<<<<<< HEAD
@@ -41,6 +44,7 @@ Namespace My
             Me.MainForm = Global._2024CompuAplicada_PF.mdiAdministrador
 >>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
 >>>>>>> 7ac0872d42d1709f57157b12b28e4c8e3ba3243d
+>>>>>>> 49f8d7f1557077b19bbb7bc8954c41ac268b2028
         End Sub
     End Class
 End Namespace

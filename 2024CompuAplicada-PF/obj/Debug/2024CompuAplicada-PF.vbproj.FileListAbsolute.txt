@@ -76,6 +76,27 @@ C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.vbproj.GenerateResource.Cache
 C:\Users\5toCompu\Pictures\john\VISUAL2015\BUENO\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmCiudadanos.resources
 >>>>>>> 74e54f6564996bf7b2b29aaa38b264aade64f462
+<<<<<<< HEAD
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe.config
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.exe
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.xml
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.pdb
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\bin\Debug\CIUDADANOS.accdb
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.pdb
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.xml
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\bin\Debug\itextsharp.dll
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.vbprojResolveAssemblyReference.cache
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmDEmpleados.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmDTCuenta.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.frmMenuPrincipal.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.mdiAdministrador.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.mdiEncargado.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.mdiOperador.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\_2024CompuAplicada_PF.Resources.resources
+C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto  actualizado 1.3\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.vbproj.GenerateResource.Cache
+=======
 >>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
 >>>>>>> d84db4b074260e052f9db93980e3d6f819383ca8
 >>>>>>> 7ac0872d42d1709f57157b12b28e4c8e3ba3243d
+>>>>>>> 49f8d7f1557077b19bbb7bc8954c41ac268b2028
