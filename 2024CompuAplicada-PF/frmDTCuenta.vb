@@ -98,9 +98,17 @@ Public Class frmDTCuenta
         End Try
     End Sub
 
+<<<<<<< HEAD
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         Dim r As Integer
         r = InputBox("Ingrese el Codigo del tipo de cuenta que desea eliminar","Tipo de cuenta")
+=======
+    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+>>>>>>> d86ba23953df3a7ea8481e12010ac02d102cc59b
 
     End Sub
 End Class

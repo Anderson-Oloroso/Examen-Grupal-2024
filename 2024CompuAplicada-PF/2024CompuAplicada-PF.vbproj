@@ -6,7 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{28301E95-63FA-4C7C-B7FA-AD5B93247ECA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_2024CompuAplicada_PF.My.MyApplication</StartupObject>
+<<<<<<< HEAD
+    <StartupObject>_2024CompuAplicada_PF.mdiOperadorrrr</StartupObject>
+=======
+    <StartupObject>_2024CompuAplicada_PF.mdiEncargado</StartupObject>
+>>>>>>> 01985055b702df3c42eefabe57db5346604d2ecf
     <RootNamespace>_2024CompuAplicada_PF</RootNamespace>
     <AssemblyName>2024CompuAplicada-PF</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -81,15 +85,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmCiudadanos.Designer.vb">
+      <DependentUpon>frmCiudadanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCiudadanos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDTCuenta.Designer.vb">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
     </Compile>
     <Compile Include="frmDTCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.vb">
+    <Compile Include="frmencar.Designer.vb">
+      <DependentUpon>frmencar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmencar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMenuPrincipal.vb" />
     <Compile Include="frmMenuPrincipal.Designer.vb">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
@@ -112,10 +126,10 @@
     <Compile Include="mdiEncargado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mdiOperador.Designer.vb">
-      <DependentUpon>mdiOperador.vb</DependentUpon>
+    <Compile Include="mdiOperadorrrr.Designer.vb">
+      <DependentUpon>mdiOperadorrrr.vb</DependentUpon>
     </Compile>
-    <Compile Include="mdiOperador.vb">
+    <Compile Include="mdiOperadorrrr.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modConexion.vb" />
@@ -136,11 +150,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCiudadanos.resx">
+      <DependentUpon>frmCiudadanos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDEmpleados.resx">
       <DependentUpon>frmDEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDTCuenta.resx">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmencar.resx">
+      <DependentUpon>frmencar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
@@ -151,8 +171,8 @@
     <EmbeddedResource Include="mdiEncargado.resx">
       <DependentUpon>mdiEncargado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mdiOperador.resx">
-      <DependentUpon>mdiOperador.vb</DependentUpon>
+    <EmbeddedResource Include="mdiOperadorrrr.resx">
+      <DependentUpon>mdiOperadorrrr.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
