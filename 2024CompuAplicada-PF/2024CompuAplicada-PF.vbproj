@@ -47,6 +47,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proyecto_Final-2024\Proyecto_Final-2024\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -72,13 +76,49 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="CIUDADANOSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDTCuenta.Designer.vb">
+      <DependentUpon>frmDTCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDTCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frmMenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.vb">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDEmpleados.Designer.vb">
+      <DependentUpon>frmDEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiAdministrador.Designer.vb">
+      <DependentUpon>mdiAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiEncargado.Designer.vb">
+      <DependentUpon>mdiEncargado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiEncargado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiOperador.Designer.vb">
+      <DependentUpon>mdiOperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiOperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modConexion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,6 +136,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+=======
+    <EmbeddedResource Include="frmDEmpleados.resx">
+      <DependentUpon>frmDEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDTCuenta.resx">
+      <DependentUpon>frmDTCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+>>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiAdministrador.resx">
+      <DependentUpon>mdiAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiEncargado.resx">
+      <DependentUpon>mdiEncargado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiOperador.resx">
+      <DependentUpon>mdiOperador.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -104,7 +167,21 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="ClassDiagram1.cd" />
+=======
+    <None Include="CIUDADANOSDataSet.xsc">
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CIUDADANOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CIUDADANOSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CIUDADANOSDataSet.xss">
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </None>
+>>>>>>> d84db4b074260e052f9db93980e3d6f819383ca8
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -115,6 +192,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CIUDADANOS.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itextsharp.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

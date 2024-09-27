@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MyApplicationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MySubMain>true</MySubMain>
-  <MainForm>Form1</MainForm>
+<<<<<<< HEAD
+  <MainForm>frmmenuprincipal</MainForm>
+=======
+  <MainForm>mdiAdministrador</MainForm>
+>>>>>>> 0a739eeee4209a0a94e104771d665aa3da5e2af6
   <SingleInstance>false</SingleInstance>
   <ShutdownMode>1</ShutdownMode>
   <EnableVisualStyles>true</EnableVisualStyles>
