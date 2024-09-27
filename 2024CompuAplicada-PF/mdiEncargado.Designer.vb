@@ -53,18 +53,16 @@ Partial Class mdiEncargado
         Me.ToolsMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WindowsMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CascadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileVerticalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileHorizontalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArrangeIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EncargadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSecionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -84,11 +82,11 @@ Partial Class mdiEncargado
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(632, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(812, 24)
         Me.MenuStrip.TabIndex = 5
         Me.MenuStrip.Text = "MenuStrip"
         '
@@ -286,46 +284,16 @@ Partial Class mdiEncargado
         '
         'WindowsMenu
         '
-        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewWindowToolStripMenuItem, Me.CascadeToolStripMenuItem, Me.TileVerticalToolStripMenuItem, Me.TileHorizontalToolStripMenuItem, Me.CloseAllToolStripMenuItem, Me.ArrangeIconsToolStripMenuItem})
+        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncargadoToolStripMenuItem})
         Me.WindowsMenu.Name = "WindowsMenu"
         Me.WindowsMenu.Size = New System.Drawing.Size(66, 20)
         Me.WindowsMenu.Text = "&Ventanas"
         '
-        'NewWindowToolStripMenuItem
+        'EncargadoToolStripMenuItem
         '
-        Me.NewWindowToolStripMenuItem.Name = "NewWindowToolStripMenuItem"
-        Me.NewWindowToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.NewWindowToolStripMenuItem.Text = "&Nueva ventana"
-        '
-        'CascadeToolStripMenuItem
-        '
-        Me.CascadeToolStripMenuItem.Name = "CascadeToolStripMenuItem"
-        Me.CascadeToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.CascadeToolStripMenuItem.Text = "&Cascada"
-        '
-        'TileVerticalToolStripMenuItem
-        '
-        Me.TileVerticalToolStripMenuItem.Name = "TileVerticalToolStripMenuItem"
-        Me.TileVerticalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.TileVerticalToolStripMenuItem.Text = "Mosaico &vertical"
-        '
-        'TileHorizontalToolStripMenuItem
-        '
-        Me.TileHorizontalToolStripMenuItem.Name = "TileHorizontalToolStripMenuItem"
-        Me.TileHorizontalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.TileHorizontalToolStripMenuItem.Text = "Mosaico &horizontal"
-        '
-        'CloseAllToolStripMenuItem
-        '
-        Me.CloseAllToolStripMenuItem.Name = "CloseAllToolStripMenuItem"
-        Me.CloseAllToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.CloseAllToolStripMenuItem.Text = "C&errar todo"
-        '
-        'ArrangeIconsToolStripMenuItem
-        '
-        Me.ArrangeIconsToolStripMenuItem.Name = "ArrangeIconsToolStripMenuItem"
-        Me.ArrangeIconsToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.ArrangeIconsToolStripMenuItem.Text = "&Organizar iconos"
+        Me.EncargadoToolStripMenuItem.Name = "EncargadoToolStripMenuItem"
+        Me.EncargadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EncargadoToolStripMenuItem.Text = "Encargado"
         '
         'HelpMenu
         '
@@ -368,12 +336,31 @@ Partial Class mdiEncargado
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.AboutToolStripMenuItem.Text = "&Acerca de..."
         '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSecionToolStripMenuItem, Me.SalirToolStripMenuItem1})
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'CerrarSecionToolStripMenuItem
+        '
+        Me.CerrarSecionToolStripMenuItem.Name = "CerrarSecionToolStripMenuItem"
+        Me.CerrarSecionToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.CerrarSecionToolStripMenuItem.Text = "Cerrar Secion"
+        '
+        'SalirToolStripMenuItem1
+        '
+        Me.SalirToolStripMenuItem1.Name = "SalirToolStripMenuItem1"
+        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
+        Me.SalirToolStripMenuItem1.Text = "Salir"
+        '
         'ToolStrip
         '
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.ToolStripSeparator1, Me.PrintToolStripButton, Me.PrintPreviewToolStripButton, Me.ToolStripSeparator2, Me.HelpToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(632, 25)
+        Me.ToolStrip.Size = New System.Drawing.Size(812, 25)
         Me.ToolStrip.TabIndex = 6
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -446,7 +433,7 @@ Partial Class mdiEncargado
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
         Me.StatusStrip.Location = New System.Drawing.Point(0, 431)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(632, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(812, 22)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
         '
@@ -460,14 +447,14 @@ Partial Class mdiEncargado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(632, 453)
+        Me.ClientSize = New System.Drawing.Size(812, 453)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.StatusStrip)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "mdiEncargado"
-        Me.Text = "mdiEncargado"
+        Me.Text = "Encargado"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
         Me.ToolStrip.ResumeLayout(False)
@@ -484,13 +471,7 @@ Partial Class mdiEncargado
     Friend WithEvents SearchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator8 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ArrangeIconsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CloseAllToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NewWindowToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WindowsMenu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CascadeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TileVerticalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TileHorizontalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripButton As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
@@ -530,5 +511,8 @@ Partial Class mdiEncargado
     Friend WithEvents ToolBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolsMenu As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents EncargadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CerrarSecionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem1 As ToolStripMenuItem
 End Class
