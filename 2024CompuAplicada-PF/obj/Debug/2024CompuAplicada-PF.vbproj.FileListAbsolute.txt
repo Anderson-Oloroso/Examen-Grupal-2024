@@ -10,7 +10,6 @@ C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\D
 C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.xml
 C:\Users\5to Compu 02\Source\Repos\Examen-Grupal-2024\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.pdb
 =======
-<<<<<<< HEAD
 C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe.config
 C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024CompuAplicada-PF\bin\Debug\CIUDADANOS.accdb
 C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe
@@ -26,8 +25,6 @@ C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024C
 C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.exe
 C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.xml
 C:\Users\5to Compu\Documents\4ta unidad\VISUAL STUDIO 2015\proyecto grupal\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.pdb
-=======
-<<<<<<< HEAD
 C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe.config
 C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-PF\bin\Debug\CIUDADANOS.accdb
 C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe
@@ -42,7 +39,6 @@ C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-P
 C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.exe
 C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.xml
 C:\Users\5to Compu\Documents\Visual Studio 2015\Repositories\2024CompuAplicada-PF\obj\Debug\2024CompuAplicada-PF.pdb
-=======
 C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\bin\Debug\CIUDADANOS.accdb
 C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.exe
 C:\Users\5to Compu\Documents\Visual Studio 2015\Projects\2024CompuAplicada-PF\2024CompuAplicada-PF\bin\Debug\2024CompuAplicada-PF.pdb
