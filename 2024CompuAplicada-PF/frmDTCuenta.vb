@@ -62,6 +62,7 @@ Public Class frmDTCuenta
         desconect()
     End Sub
     Private Sub eliminar()
+<<<<<<< HEAD
         conect()
         r = InputBox("Ingrese el Codigo del tipo de cuenta que desea eliminar", "Tipo de cuenta")
         If r <> "" Then
@@ -79,6 +80,16 @@ Public Class frmDTCuenta
         Try
             ejecutar.ExecuteNonQuery()
             MsgBox("Datos eliminados correctamente", vbCritical + vbOKOnly, "Eliminar")
+=======
+        sql = "DELETE* FROM TIPOCUENTA WHERE cod_tipocuenta= "
+        conect()
+        ejecutar.CommandType = CommandType.Text
+        ejecutar.Connection = conexion
+        ejecutar.CommandText = sql
+
+        Try
+            
+>>>>>>> 2616879e68097951eb53875619f41362c381979b
         Catch ex As Exception
             MsgBox("Error en la eliminación: " & ex.Message, vbCritical + vbOKOnly, "Eliminar")
         End Try
@@ -106,6 +117,7 @@ Public Class frmDTCuenta
         End Try
     End Sub
 
+<<<<<<< HEAD
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
         frmActualizar.Show()
     End Sub
@@ -116,5 +128,19 @@ Public Class frmDTCuenta
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         eliminar()
+=======
+<<<<<<< HEAD
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        Dim r As Integer
+        r = InputBox("Ingrese el Codigo del tipo de cuenta que desea eliminar","Tipo de cuenta")
+=======
+    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+>>>>>>> d86ba23953df3a7ea8481e12010ac02d102cc59b
+
+>>>>>>> 2616879e68097951eb53875619f41362c381979b
     End Sub
 End Class
