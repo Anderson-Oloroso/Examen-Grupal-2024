@@ -6,11 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{28301E95-63FA-4C7C-B7FA-AD5B93247ECA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-<<<<<<< HEAD
-    <StartupObject>_2024CompuAplicada_PF.mdiOperadorrrr</StartupObject>
-=======
-    <StartupObject>_2024CompuAplicada_PF.mdiEncargado</StartupObject>
->>>>>>> 01985055b702df3c42eefabe57db5346604d2ecf
+    <StartupObject>_2024CompuAplicada_PF.My.MyApplication</StartupObject>
     <RootNamespace>_2024CompuAplicada_PF</RootNamespace>
     <AssemblyName>2024CompuAplicada-PF</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -80,29 +76,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CRUD.Designer.vb">
-      <DependentUpon>CRUD.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CRUD.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmActualizar.Designer.vb">
-      <DependentUpon>frmActualizar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmActualizar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAgregar.Designer.vb">
-      <DependentUpon>frmAgregar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAgregar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCiudadanos.Designer.vb">
-      <DependentUpon>frmCiudadanos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmCiudadanos.vb">
-      <SubType>Form</SubType>
+    <Compile Include="CIUDADANOSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmDTCuenta.Designer.vb">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
@@ -110,13 +87,9 @@
     <Compile Include="frmDTCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmencar.Designer.vb">
-      <DependentUpon>frmencar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmencar.vb">
+    <Compile Include="frmMenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.vb" />
     <Compile Include="frmMenuPrincipal.Designer.vb">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
@@ -139,10 +112,10 @@
     <Compile Include="mdiEncargado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mdiOperadorrrr.Designer.vb">
-      <DependentUpon>mdiOperadorrrr.vb</DependentUpon>
+    <Compile Include="mdiOperador.Designer.vb">
+      <DependentUpon>mdiOperador.vb</DependentUpon>
     </Compile>
-    <Compile Include="mdiOperadorrrr.vb">
+    <Compile Include="mdiOperador.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modConexion.vb" />
@@ -163,28 +136,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <EmbeddedResource Include="CRUD.resx">
-      <DependentUpon>CRUD.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmActualizar.resx">
-      <DependentUpon>frmActualizar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregar.resx">
-      <DependentUpon>frmAgregar.vb</DependentUpon>
-=======
-    <EmbeddedResource Include="frmCiudadanos.resx">
-      <DependentUpon>frmCiudadanos.vb</DependentUpon>
->>>>>>> 2616879e68097951eb53875619f41362c381979b
-    </EmbeddedResource>
     <EmbeddedResource Include="frmDEmpleados.resx">
       <DependentUpon>frmDEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDTCuenta.resx">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmencar.resx">
-      <DependentUpon>frmencar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
@@ -195,8 +151,8 @@
     <EmbeddedResource Include="mdiEncargado.resx">
       <DependentUpon>mdiEncargado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mdiOperadorrrr.resx">
-      <DependentUpon>mdiOperadorrrr.vb</DependentUpon>
+    <EmbeddedResource Include="mdiOperador.resx">
+      <DependentUpon>mdiOperador.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -206,6 +162,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CIUDADANOSDataSet.xsc">
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CIUDADANOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CIUDADANOSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CIUDADANOSDataSet.xss">
+      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -218,6 +185,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CIUDADANOS.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="itextsharp.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

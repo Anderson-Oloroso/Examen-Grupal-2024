@@ -6,10 +6,6 @@
 </name>
 </assembly>
 <members>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 <member name="T:_2024CompuAplicada_PF.CIUDADANOSDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.
@@ -195,8 +191,6 @@ Update Order Option
 Used to sort self-referenced table's rows
 </summary>
 </member>
->>>>>>> d84db4b074260e052f9db93980e3d6f819383ca8
->>>>>>> 2616879e68097951eb53875619f41362c381979b
 <member name="T:_2024CompuAplicada_PF.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.

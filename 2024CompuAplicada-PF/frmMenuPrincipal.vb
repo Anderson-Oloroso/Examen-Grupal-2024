@@ -12,7 +12,6 @@
     End Sub
 
     Private Sub OperadorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OperadorToolStripMenuItem.Click
-        mdiOperadorrrr.Show()
-
+        mdiOperador.Show()
     End Sub
 End Class

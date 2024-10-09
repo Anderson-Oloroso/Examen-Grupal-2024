@@ -60,23 +60,23 @@ Public Class mdiEncargado
         Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
     End Sub
 
-    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         Me.LayoutMdi(MdiLayout.Cascade)
     End Sub
 
-    Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         Me.LayoutMdi(MdiLayout.TileVertical)
     End Sub
 
-    Private Sub TileHorizontalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub TileHorizontalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         Me.LayoutMdi(MdiLayout.TileHorizontal)
     End Sub
 
-    Private Sub ArrangeIconsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub ArrangeIconsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         Me.LayoutMdi(MdiLayout.ArrangeIcons)
     End Sub
 
-    Private Sub CloseAllToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub CloseAllToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) 
         ' Cierre todos los formularios secundarios del principal.
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
@@ -85,26 +85,4 @@ Public Class mdiEncargado
 
     Private m_ChildFormNumber As Integer
 
-
-    Private Sub SalirToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem1.Click
-        Dim botn As Integer
-        botn = MsgBox("Desea salir", vbYesNo + vbQuestion, "Salir")
-        If botn = 6 Then
-            Close()
-        End If
-    End Sub
-
-    Private Sub CerrarSecionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSecionToolStripMenuItem.Click
-        Dim botn As Integer
-        botn = MsgBox("Desea cerrar sesión", vbYesNo + vbQuestion, "Cerrar Sesión")
-        If botn = 6 Then
-            Close()
-            frmmenuprincipal.Show()
-        End If
-    End Sub
-
-    Private Sub EncargadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EncargadoToolStripMenuItem.Click
-        frmencar.MdiParent = Me
-        frmencar.Show()
-    End Sub
 End Class

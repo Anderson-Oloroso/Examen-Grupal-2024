@@ -53,16 +53,12 @@ Partial Class mdiEncargado
         Me.ToolsMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WindowsMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EncargadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarSecionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -75,6 +71,10 @@ Partial Class mdiEncargado
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.RegionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DepartamentosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MunicipiosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NivelesAcadémicToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -82,11 +82,11 @@ Partial Class mdiEncargado
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(812, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(632, 24)
         Me.MenuStrip.TabIndex = 5
         Me.MenuStrip.Text = "MenuStrip"
         '
@@ -284,16 +284,10 @@ Partial Class mdiEncargado
         '
         'WindowsMenu
         '
-        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncargadoToolStripMenuItem})
+        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegionesToolStripMenuItem, Me.DepartamentosToolStripMenuItem, Me.MunicipiosToolStripMenuItem, Me.NivelesAcadémicToolStripMenuItem})
         Me.WindowsMenu.Name = "WindowsMenu"
         Me.WindowsMenu.Size = New System.Drawing.Size(66, 20)
         Me.WindowsMenu.Text = "&Ventanas"
-        '
-        'EncargadoToolStripMenuItem
-        '
-        Me.EncargadoToolStripMenuItem.Name = "EncargadoToolStripMenuItem"
-        Me.EncargadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EncargadoToolStripMenuItem.Text = "Encargado"
         '
         'HelpMenu
         '
@@ -336,31 +330,12 @@ Partial Class mdiEncargado
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.AboutToolStripMenuItem.Text = "&Acerca de..."
         '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSecionToolStripMenuItem, Me.SalirToolStripMenuItem1})
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'CerrarSecionToolStripMenuItem
-        '
-        Me.CerrarSecionToolStripMenuItem.Name = "CerrarSecionToolStripMenuItem"
-        Me.CerrarSecionToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
-        Me.CerrarSecionToolStripMenuItem.Text = "Cerrar Secion"
-        '
-        'SalirToolStripMenuItem1
-        '
-        Me.SalirToolStripMenuItem1.Name = "SalirToolStripMenuItem1"
-        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
-        Me.SalirToolStripMenuItem1.Text = "Salir"
-        '
         'ToolStrip
         '
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.ToolStripSeparator1, Me.PrintToolStripButton, Me.PrintPreviewToolStripButton, Me.ToolStripSeparator2, Me.HelpToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(812, 25)
+        Me.ToolStrip.Size = New System.Drawing.Size(632, 25)
         Me.ToolStrip.TabIndex = 6
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -433,7 +408,7 @@ Partial Class mdiEncargado
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
         Me.StatusStrip.Location = New System.Drawing.Point(0, 431)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(812, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(632, 22)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
         '
@@ -443,18 +418,42 @@ Partial Class mdiEncargado
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
+        'RegionesToolStripMenuItem
+        '
+        Me.RegionesToolStripMenuItem.Name = "RegionesToolStripMenuItem"
+        Me.RegionesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.RegionesToolStripMenuItem.Text = "Regiones"
+        '
+        'DepartamentosToolStripMenuItem
+        '
+        Me.DepartamentosToolStripMenuItem.Name = "DepartamentosToolStripMenuItem"
+        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.DepartamentosToolStripMenuItem.Text = "Departamentos"
+        '
+        'MunicipiosToolStripMenuItem
+        '
+        Me.MunicipiosToolStripMenuItem.Name = "MunicipiosToolStripMenuItem"
+        Me.MunicipiosToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.MunicipiosToolStripMenuItem.Text = "Municipios"
+        '
+        'NivelesAcadémicToolStripMenuItem
+        '
+        Me.NivelesAcadémicToolStripMenuItem.Name = "NivelesAcadémicToolStripMenuItem"
+        Me.NivelesAcadémicToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.NivelesAcadémicToolStripMenuItem.Text = "Niveles Académic"
+        '
         'mdiEncargado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(812, 453)
+        Me.ClientSize = New System.Drawing.Size(632, 453)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.StatusStrip)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "mdiEncargado"
-        Me.Text = "Encargado"
+        Me.Text = "mdiEncargado"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
         Me.ToolStrip.ResumeLayout(False)
@@ -511,8 +510,8 @@ Partial Class mdiEncargado
     Friend WithEvents ToolBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolsMenu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EncargadoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarSecionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SalirToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents RegionesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DepartamentosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MunicipiosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NivelesAcadémicToolStripMenuItem As ToolStripMenuItem
 End Class

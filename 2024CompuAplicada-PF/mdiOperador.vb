@@ -1,6 +1,6 @@
 ﻿Imports System.Windows.Forms
 
-Public Class mdiOperadorrrr
+Public Class mdiOperador
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripMenuItem.Click, NewToolStripButton.Click
         ' Cree una nueva instancia del formulario secundario.
@@ -60,8 +60,8 @@ Public Class mdiOperadorrrr
         Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
     End Sub
 
-    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.LayoutMdi(MdiLayout.Cascade)
+    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CascadeToolStripMenuItem.Click
+
     End Sub
 
     Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
@@ -85,7 +85,7 @@ Public Class mdiOperadorrrr
 
     Private m_ChildFormNumber As Integer
 
-    Private Sub CiudadanosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CiudadanosToolStripMenuItem.Click
-        frmCiudadanos.Show()
+    Private Sub mdiOperador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

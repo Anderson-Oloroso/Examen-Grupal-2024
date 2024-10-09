@@ -22,23 +22,20 @@ Partial Class frmDTCuenta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.dgvCuentas = New System.Windows.Forms.DataGridView()
+        Me.dgvcCTCuenta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvcNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvcDescrip = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnImprimir = New System.Windows.Forms.Button()
-        Me.dgvcDescrip = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvcNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvcCTCuenta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCuentas = New System.Windows.Forms.DataGridView()
         CType(Me.dgvCuentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-<<<<<<< HEAD
-=======
         'dgvCuentas
         '
-        Me.dgvCuentas.AllowUserToOrderColumns = True
         Me.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCuentas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvcCTCuenta, Me.dgvcNombre, Me.dgvcDescrip})
         Me.dgvCuentas.Location = New System.Drawing.Point(12, 25)
@@ -50,21 +47,23 @@ Partial Class frmDTCuenta
         '
         Me.dgvcCTCuenta.HeaderText = "Cod. Tipo Cuenta"
         Me.dgvcCTCuenta.Name = "dgvcCTCuenta"
+        Me.dgvcCTCuenta.ReadOnly = True
         Me.dgvcCTCuenta.Width = 90
         '
         'dgvcNombre
         '
         Me.dgvcNombre.HeaderText = "Nombre"
         Me.dgvcNombre.Name = "dgvcNombre"
+        Me.dgvcNombre.ReadOnly = True
         Me.dgvcNombre.Width = 200
         '
         'dgvcDescrip
         '
         Me.dgvcDescrip.HeaderText = "Descripción"
         Me.dgvcDescrip.Name = "dgvcDescrip"
+        Me.dgvcDescrip.ReadOnly = True
         Me.dgvcDescrip.Width = 250
         '
->>>>>>> 2616879e68097951eb53875619f41362c381979b
         'btnActualizar
         '
         Me.btnActualizar.Location = New System.Drawing.Point(601, 83)
@@ -110,39 +109,11 @@ Partial Class frmDTCuenta
         Me.btnImprimir.Text = "Imprimir"
         Me.btnImprimir.UseVisualStyleBackColor = True
         '
-        'dgvcDescrip
-        '
-        Me.dgvcDescrip.HeaderText = "Descripción"
-        Me.dgvcDescrip.Name = "dgvcDescrip"
-        Me.dgvcDescrip.Width = 250
-        '
-        'dgvcNombre
-        '
-        Me.dgvcNombre.HeaderText = "Nombre"
-        Me.dgvcNombre.Name = "dgvcNombre"
-        Me.dgvcNombre.Width = 200
-        '
-        'dgvcCTCuenta
-        '
-        Me.dgvcCTCuenta.HeaderText = "Cod. Tipo Cuenta"
-        Me.dgvcCTCuenta.Name = "dgvcCTCuenta"
-        Me.dgvcCTCuenta.Width = 90
-        '
-        'dgvCuentas
-        '
-        Me.dgvCuentas.AllowUserToOrderColumns = True
-        Me.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCuentas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvcCTCuenta, Me.dgvcNombre, Me.dgvcDescrip})
-        Me.dgvCuentas.Location = New System.Drawing.Point(12, 25)
-        Me.dgvCuentas.Name = "dgvCuentas"
-        Me.dgvCuentas.Size = New System.Drawing.Size(583, 300)
-        Me.dgvCuentas.TabIndex = 1
-        '
         'frmDTCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(686, 337)
+        Me.ClientSize = New System.Drawing.Size(703, 337)
         Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.btnImprimir)
         Me.Controls.Add(Me.btnCerrar)
@@ -155,13 +126,14 @@ Partial Class frmDTCuenta
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents dgvCuentas As DataGridView
+    Friend WithEvents dgvcCTCuenta As DataGridViewTextBoxColumn
+    Friend WithEvents dgvcNombre As DataGridViewTextBoxColumn
+    Friend WithEvents dgvcDescrip As DataGridViewTextBoxColumn
     Friend WithEvents btnActualizar As Button
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnImprimir As Button
-    Friend WithEvents dgvcDescrip As DataGridViewTextBoxColumn
-    Friend WithEvents dgvcNombre As DataGridViewTextBoxColumn
-    Friend WithEvents dgvcCTCuenta As DataGridViewTextBoxColumn
-    Friend WithEvents dgvCuentas As DataGridView
 End Class
