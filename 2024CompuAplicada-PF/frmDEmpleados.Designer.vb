@@ -27,6 +27,8 @@ Partial Class frmDEmpleados
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnImprimir = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAgregar
@@ -74,11 +76,23 @@ Partial Class frmDEmpleados
         Me.btnImprimir.Text = "Imprimir"
         Me.btnImprimir.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(600, 300)
+        Me.DataGridView1.TabIndex = 3
+        '
         'frmDEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(708, 324)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnImprimir)
         Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.btnCerrar)
@@ -86,6 +100,7 @@ Partial Class frmDEmpleados
         Me.Controls.Add(Me.btnAgregar)
         Me.Name = "frmDEmpleados"
         Me.Text = "Empleados"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -94,4 +109,5 @@ Partial Class frmDEmpleados
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnActualizar As Button
     Friend WithEvents btnImprimir As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

@@ -76,10 +76,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CIUDADANOSDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    <Compile Include="CRUD.Designer.vb">
+      <DependentUpon>CRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizar.Designer.vb">
+      <DependentUpon>frmActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregar.Designer.vb">
+      <DependentUpon>frmAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregar.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDTCuenta.Designer.vb">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
@@ -136,6 +149,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CRUD.resx">
+      <DependentUpon>CRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizar.resx">
+      <DependentUpon>frmActualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregar.resx">
+      <DependentUpon>frmAgregar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDEmpleados.resx">
       <DependentUpon>frmDEmpleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -162,17 +184,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CIUDADANOSDataSet.xsc">
-      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CIUDADANOSDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CIUDADANOSDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CIUDADANOSDataSet.xss">
-      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -185,9 +196,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CIUDADANOS.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="itextsharp.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
