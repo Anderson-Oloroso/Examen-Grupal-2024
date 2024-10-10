@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMenuPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMenuPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -28,7 +28,6 @@ Partial Class frmMenuPrincipal
         Me.EncargadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OperadorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msusario = New System.Windows.Forms.ToolStripContainer()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.msusario.TopToolStripPanel.SuspendLayout()
         Me.msusario.SuspendLayout()
@@ -41,36 +40,40 @@ Partial Class frmMenuPrincipal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(184, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(282, 38)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AAdministradorToolStripMenuItem, Me.EncargadoToolStripMenuItem, Me.OperadorToolStripMenuItem})
+        Me.UsuariosToolStripMenuItem.Font = New System.Drawing.Font("Algerian", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
-        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.UsuariosToolStripMenuItem.Text = "Usuarios:"
         '
         'AAdministradorToolStripMenuItem
         '
         Me.AAdministradorToolStripMenuItem.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.AAdministradorToolStripMenuItem.Font = New System.Drawing.Font("Stencil", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AAdministradorToolStripMenuItem.Name = "AAdministradorToolStripMenuItem"
-        Me.AAdministradorToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AAdministradorToolStripMenuItem.Size = New System.Drawing.Size(235, 26)
         Me.AAdministradorToolStripMenuItem.Text = "Administrador"
         '
         'EncargadoToolStripMenuItem
         '
         Me.EncargadoToolStripMenuItem.BackColor = System.Drawing.Color.DodgerBlue
+        Me.EncargadoToolStripMenuItem.Font = New System.Drawing.Font("Stencil", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EncargadoToolStripMenuItem.Name = "EncargadoToolStripMenuItem"
-        Me.EncargadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EncargadoToolStripMenuItem.Size = New System.Drawing.Size(235, 26)
         Me.EncargadoToolStripMenuItem.Text = "Encargado"
         '
         'OperadorToolStripMenuItem
         '
         Me.OperadorToolStripMenuItem.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.OperadorToolStripMenuItem.Font = New System.Drawing.Font("Stencil", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OperadorToolStripMenuItem.Name = "OperadorToolStripMenuItem"
-        Me.OperadorToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OperadorToolStripMenuItem.Size = New System.Drawing.Size(235, 26)
         Me.OperadorToolStripMenuItem.Text = "Operador"
         '
         'msusario
@@ -83,11 +86,11 @@ Partial Class frmMenuPrincipal
         'msusario.ContentPanel
         '
         Me.msusario.ContentPanel.BackColor = System.Drawing.Color.LightBlue
-        Me.msusario.ContentPanel.Size = New System.Drawing.Size(184, 134)
-        Me.msusario.Location = New System.Drawing.Point(81, 141)
+        Me.msusario.ContentPanel.Size = New System.Drawing.Size(282, 187)
+        Me.msusario.Location = New System.Drawing.Point(50, 34)
         Me.msusario.Margin = New System.Windows.Forms.Padding(5)
         Me.msusario.Name = "msusario"
-        Me.msusario.Size = New System.Drawing.Size(184, 158)
+        Me.msusario.Size = New System.Drawing.Size(282, 225)
         Me.msusario.TabIndex = 2
         Me.msusario.Text = "ToolStripContainer1"
         '
@@ -95,22 +98,11 @@ Partial Class frmMenuPrincipal
         '
         Me.msusario.TopToolStripPanel.Controls.Add(Me.MenuStrip1)
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Algerian", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(119, 79)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(114, 21)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "USUARIOS:"
-        '
         'frmMenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(348, 375)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(380, 299)
         Me.Controls.Add(Me.msusario)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMenuPrincipal"
@@ -122,7 +114,6 @@ Partial Class frmMenuPrincipal
         Me.msusario.ResumeLayout(False)
         Me.msusario.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents MenuStrip1 As MenuStrip
@@ -131,5 +122,4 @@ Partial Class frmMenuPrincipal
     Friend WithEvents AAdministradorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EncargadoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OperadorToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label1 As Label
 End Class
