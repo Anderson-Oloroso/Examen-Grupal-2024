@@ -71,10 +71,14 @@ Partial Class mdiEncargado
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.RegionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DepartamentosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MunicipiosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NivelesAcadémicToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSecionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DepartamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MunicipioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NIvelAcademicoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -82,7 +86,7 @@ Partial Class mdiEncargado
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.EditMenu, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
@@ -284,7 +288,7 @@ Partial Class mdiEncargado
         '
         'WindowsMenu
         '
-        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegionesToolStripMenuItem, Me.DepartamentosToolStripMenuItem, Me.MunicipiosToolStripMenuItem, Me.NivelesAcadémicToolStripMenuItem})
+        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegionToolStripMenuItem, Me.DepartamentoToolStripMenuItem, Me.MunicipioToolStripMenuItem, Me.NIvelAcademicoToolStripMenuItem, Me.ImprimirToolStripMenuItem})
         Me.WindowsMenu.Name = "WindowsMenu"
         Me.WindowsMenu.Size = New System.Drawing.Size(66, 20)
         Me.WindowsMenu.Text = "&Ventanas"
@@ -418,29 +422,54 @@ Partial Class mdiEncargado
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
-        'RegionesToolStripMenuItem
+        'SalirToolStripMenuItem
         '
-        Me.RegionesToolStripMenuItem.Name = "RegionesToolStripMenuItem"
-        Me.RegionesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.RegionesToolStripMenuItem.Text = "Regiones"
+        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSecionToolStripMenuItem, Me.SalirToolStripMenuItem1})
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
         '
-        'DepartamentosToolStripMenuItem
+        'CerrarSecionToolStripMenuItem
         '
-        Me.DepartamentosToolStripMenuItem.Name = "DepartamentosToolStripMenuItem"
-        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.DepartamentosToolStripMenuItem.Text = "Departamentos"
+        Me.CerrarSecionToolStripMenuItem.Name = "CerrarSecionToolStripMenuItem"
+        Me.CerrarSecionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CerrarSecionToolStripMenuItem.Text = "Cerrar Secion"
         '
-        'MunicipiosToolStripMenuItem
+        'SalirToolStripMenuItem1
         '
-        Me.MunicipiosToolStripMenuItem.Name = "MunicipiosToolStripMenuItem"
-        Me.MunicipiosToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.MunicipiosToolStripMenuItem.Text = "Municipios"
+        Me.SalirToolStripMenuItem1.Name = "SalirToolStripMenuItem1"
+        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem1.Text = "Salir"
         '
-        'NivelesAcadémicToolStripMenuItem
+        'RegionToolStripMenuItem
         '
-        Me.NivelesAcadémicToolStripMenuItem.Name = "NivelesAcadémicToolStripMenuItem"
-        Me.NivelesAcadémicToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.NivelesAcadémicToolStripMenuItem.Text = "Niveles Académic"
+        Me.RegionToolStripMenuItem.Name = "RegionToolStripMenuItem"
+        Me.RegionToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.RegionToolStripMenuItem.Text = "Region"
+        '
+        'DepartamentoToolStripMenuItem
+        '
+        Me.DepartamentoToolStripMenuItem.Name = "DepartamentoToolStripMenuItem"
+        Me.DepartamentoToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.DepartamentoToolStripMenuItem.Text = "Departamento"
+        '
+        'MunicipioToolStripMenuItem
+        '
+        Me.MunicipioToolStripMenuItem.Name = "MunicipioToolStripMenuItem"
+        Me.MunicipioToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.MunicipioToolStripMenuItem.Text = "Municipio"
+        '
+        'NIvelAcademicoToolStripMenuItem
+        '
+        Me.NIvelAcademicoToolStripMenuItem.Name = "NIvelAcademicoToolStripMenuItem"
+        Me.NIvelAcademicoToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.NIvelAcademicoToolStripMenuItem.Text = "NIvel academico"
+        '
+        'ImprimirToolStripMenuItem
+        '
+        Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ImprimirToolStripMenuItem.Text = "Imprimir"
         '
         'mdiEncargado
         '
@@ -453,6 +482,7 @@ Partial Class mdiEncargado
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "mdiEncargado"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "mdiEncargado"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
@@ -510,8 +540,12 @@ Partial Class mdiEncargado
     Friend WithEvents ToolBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusBarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolsMenu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RegionesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DepartamentosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MunicipiosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NivelesAcadémicToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DepartamentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MunicipioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NIvelAcademicoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImprimirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CerrarSecionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem1 As ToolStripMenuItem
 End Class

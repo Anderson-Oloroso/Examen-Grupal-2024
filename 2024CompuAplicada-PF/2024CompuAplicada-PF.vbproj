@@ -76,10 +76,53 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CIUDADANOSDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
+    <Compile Include="Form1.designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAct2.Designer.vb">
+      <DependentUpon>frmAct2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAct2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizar.Designer.vb">
+      <DependentUpon>frmActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarC.Designer.vb">
+      <DependentUpon>frmAgregarC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgrEmpl.Designer.vb">
+      <DependentUpon>frmAgrEmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgrEmpl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCiudadanos.designer.vb">
+      <DependentUpon>frmCiudadanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCiudadanos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartamento.designer.vb">
+      <DependentUpon>frmDepartamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdepto.designer.vb">
+      <DependentUpon>frmdepto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdepto.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDTCuenta.Designer.vb">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
@@ -87,17 +130,40 @@
     <Compile Include="frmDTCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmDEmpleado.Designer.vb">
+      <DependentUpon>frmDEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpimuni.designer.vb">
+      <DependentUpon>frmImpimuni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpimuni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.designer.vb">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.vb">
-      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    <Compile Include="frmMuni.designer.vb">
+      <DependentUpon>frmMuni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuni.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDEmpleados.Designer.vb">
-      <DependentUpon>frmDEmpleados.vb</DependentUpon>
+    <Compile Include="frmMunicipio.designer.vb">
+      <DependentUpon>frmMunicipio.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmDEmpleados.vb">
+    <Compile Include="frmMunicipio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNivelAca.designer.vb">
+      <DependentUpon>frmNivelAca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNivelAca.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mdiAdministrador.Designer.vb">
@@ -112,10 +178,10 @@
     <Compile Include="mdiEncargado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mdiOperador.Designer.vb">
-      <DependentUpon>mdiOperador.vb</DependentUpon>
+    <Compile Include="mdiPapamenu.designer.vb">
+      <DependentUpon>mdiPapamenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="mdiOperador.vb">
+    <Compile Include="mdiPapamenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modConexion.vb" />
@@ -136,14 +202,50 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmDEmpleados.resx">
-      <DependentUpon>frmDEmpleados.vb</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAct2.resx">
+      <DependentUpon>frmAct2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizar.resx">
+      <DependentUpon>frmActualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarC.resx">
+      <DependentUpon>frmAgregarC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgrEmpl.resx">
+      <DependentUpon>frmAgrEmpl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCiudadanos.resx">
+      <DependentUpon>frmCiudadanos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartamento.resx">
+      <DependentUpon>frmDepartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdepto.resx">
+      <DependentUpon>frmdepto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDTCuenta.resx">
       <DependentUpon>frmDTCuenta.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDEmpleado.resx">
+      <DependentUpon>frmDEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpimuni.resx">
+      <DependentUpon>frmImpimuni.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuni.resx">
+      <DependentUpon>frmMuni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMunicipio.resx">
+      <DependentUpon>frmMunicipio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNivelAca.resx">
+      <DependentUpon>frmNivelAca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mdiAdministrador.resx">
       <DependentUpon>mdiAdministrador.vb</DependentUpon>
@@ -151,8 +253,8 @@
     <EmbeddedResource Include="mdiEncargado.resx">
       <DependentUpon>mdiEncargado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mdiOperador.resx">
-      <DependentUpon>mdiOperador.vb</DependentUpon>
+    <EmbeddedResource Include="mdiPapamenu.resx">
+      <DependentUpon>mdiPapamenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -162,17 +264,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CIUDADANOSDataSet.xsc">
-      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CIUDADANOSDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CIUDADANOSDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CIUDADANOSDataSet.xss">
-      <DependentUpon>CIUDADANOSDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
